@@ -40,5 +40,5 @@ jobs:
           image: valentinesean/actions-demo
           registry: docker.io
           tag: actions-demo-tag
-          username: {{ DOCKER_USERNAME }}
-          password: {{ DOCKER_PASSWORD }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
